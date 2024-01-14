@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterclassApp.ClientEntryPage"
+             Title="ClientEntryPage">
+    <StackLayout>
+        <Entry x:Name="numeEntry" Placeholder="Nume" FontSize="18" Margin="0,0,0,10" />
+        <Entry x:Name="prenumeEntry" Placeholder="Prenume" FontSize="18" Margin="0,0,0,10" />
+        <Entry x:Name="emailEntry" Placeholder="Email" FontSize="18" Margin="0,0,0,10" />
+        <Button Text="Save" Clicked="OnSaveButtonClicked" />
+    </StackLayout>
+</ContentPage>

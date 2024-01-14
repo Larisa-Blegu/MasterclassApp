@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MasterclassApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MasterclassApp"
+    Shell.FlyoutBehavior="Disabled">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="TabTitleColor">#FF69B4</Color>
+            <Color x:Key="TabBackgroundColor">#FF69B4</Color>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="Home"
+          ContentTemplate="{DataTemplate local:LoginPage}" Route="MainPage">
+            <ShellContent.Style>
+                <Style TargetType="ShellContent">
+                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                    <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                </Style>
+            </ShellContent.Style>
+        </ShellContent>
+
+            <ShellContent Title="Masterclass Makeup"
+                      ContentTemplate="{DataTemplate local:MainPage}">
+                <ShellContent.Style>
+                    <Style TargetType="ShellContent">
+                        <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                        <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                    </Style>
+                </ShellContent.Style>
+            </ShellContent>
+
+            <ShellContent Title="Cursuri"
+                      ContentTemplate="{DataTemplate local:CursPage}">
+                <ShellContent.Style>
+                    <Style TargetType="ShellContent">
+                        <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                        <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                    </Style>
+                </ShellContent.Style>
+            </ShellContent>
+
+            <ShellContent Title="Client"
+            ContentTemplate="{DataTemplate local:ClientPage}">
+            <ShellContent.Style>
+                <Style TargetType="ShellContent">
+                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                    <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                </Style>
+            </ShellContent.Style>
+        </ShellContent>
+
+            <ShellContent Title="Bilet"
+            ContentTemplate="{DataTemplate local:BiletPage}">
+            <ShellContent.Style>
+                <Style TargetType="ShellContent">
+                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                    <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                </Style>
+            </ShellContent.Style>
+        </ShellContent>
+
+            <ShellContent Title="Inscriere"
+            ContentTemplate="{DataTemplate local:InscrierePage}">
+            <ShellContent.Style>
+                <Style TargetType="ShellContent">
+                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                    <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                </Style>
+            </ShellContent.Style>
+        </ShellContent>
+
+
+        <ShellContent Title="Log OUT"
+                          ContentTemplate="{DataTemplate local:LogoutPage}">
+            <ShellContent.Style>
+                <Style TargetType="ShellContent">
+                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                    <Setter Property="Shell.ForegroundColor" Value="{StaticResource TabTitleColor}" />
+                </Style>
+            </ShellContent.Style>
+        </ShellContent>
+    </TabBar>
+
+
+</Shell>

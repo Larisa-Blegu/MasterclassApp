@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterclassApp.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ScrollView">
+                <Setter Property="BackgroundColor" Value="#FCE4EC" />
+            </Style>
+
+            <Style TargetType="VerticalStackLayout">
+                <Setter Property="Spacing" Value="15" />
+                <Setter Property="Padding" Value="20,0" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style TargetType="Image">
+                <Setter Property="HeightRequest" Value="150" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="HeadingLabelStyle">
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="TextColor" Value="#333333" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="masterclass.png"
+                   SemanticProperties.Description="Image depicting a Makeup Masterclass" />
+
+            <Label Style="{StaticResource HeadingLabelStyle}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Explore the Art of Makeup"
+                              TextDecorations="Underline">
+                            <Span.TextColor>
+                                <OnPlatform x:TypeArguments="Color">
+                                    <On Platform="iOS" Value="#6A5ACD" />
+                                    <On Platform="Android" Value="#6A5ACD" />
+                                    <On Platform="UWP" Value="#6A5ACD" />
+                                </OnPlatform>
+                            </Span.TextColor>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label
+                Text="Join our Makeup Masterclass to discover advanced techniques and secrets of exceptional makeup artistry."
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Learn from industry experts and elevate your makeup skills."
+                FontSize="18"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterclassApp.InscriereDetailPage"
+             Title="InscriereDetailPage">
+    <StackLayout Margin="20">
+        <Label Text="Client: " FontAttributes="Bold" />
+        <Label Text="{Binding Client}" />
+
+        <Label Text="Curs: " FontAttributes="Bold" />
+        <Label Text="{Binding Curs}" />
+
+        <Label Text="Bilet: " FontAttributes="Bold" />
+        <Label Text="{Binding Bilet}" />
+
+
+        <Button Text="Edit" Clicked="OnEditButtonClicked" />
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+    </StackLayout>
+</ContentPage>

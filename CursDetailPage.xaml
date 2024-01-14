@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterclassApp.CursDetailPage"
+             Title="CursDetailPage">
+    <StackLayout Margin="20">
+        <Label Text="Nume: " FontAttributes="Bold" />
+        <Label Text="{Binding Name}" />
+
+        <Label Text="Descriere: " FontAttributes="Bold" />
+        <Label Text="{Binding Description}" />
+        
+        <Label Text="Locatie: " FontAttributes="Bold" />
+        <Label Text="{Binding Locatie}" />
+
+        <Label Text="Data: " FontAttributes="Bold" />
+        <Label Text="{Binding Date}" />
+        
+
+        <Button Text="Edit" Clicked="OnEditButtonClicked" />
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+    </StackLayout>
+</ContentPage>

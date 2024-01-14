@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterclassApp.BiletDetailPage"
+             Title="BiletDetailPage">
+    <StackLayout Margin="20">
+        <Label Text="Tip: " FontAttributes="Bold" />
+        <Label Text="{Binding Tip}" />
+
+        <Label Text="Pret: " FontAttributes="Bold" />
+        <Label Text="{Binding Pret}" />
+       
+        <Button Text="Edit" Clicked="OnEditButtonClicked" />
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+    </StackLayout>
+</ContentPage>
